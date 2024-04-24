@@ -1,5 +1,5 @@
-import { Logo, SettingsIcon, UsersIcon } from '@/components/icons';
-import { NavItem } from 'app/nav-item';
+import { Logo } from '@/components/icons';
+import Navbar from 'app/navbar';
 import { User } from 'app/user';
 import Link from 'next/link';
 import React from 'react';
@@ -16,16 +16,7 @@ const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
             </Link>
           </div>
           <div className="flex-1 overflow-auto py-2">
-            <nav className="grid items-start px-4 text-sm font-medium">
-              <NavItem href="/user">
-                <UsersIcon className="h-4 w-4" />
-                Users
-              </NavItem>
-              <NavItem href="/settings">
-                <SettingsIcon className="h-4 w-4" />
-                Settings
-              </NavItem>
-            </nav>
+            <Navbar />
           </div>
         </div>
       </div>

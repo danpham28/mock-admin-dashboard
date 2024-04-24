@@ -1,11 +1,10 @@
-import { Logo, SettingsIcon, UsersIcon } from '@/components/icons';
-import { NavItem } from 'app/nav-item';
+import { Logo } from '@/components/icons';
 import Navbar from 'app/navbar';
 import { User } from 'app/user';
 import Link from 'next/link';
 import React from 'react';
 
-const UserLayout = ({ children }: { children: React.ReactNode }) => {
+const AffilliateLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">
       <div className="hidden border-r bg-gray-100/40 lg:block dark:bg-gray-800/40">
@@ -38,4 +37,4 @@ const UserLayout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default UserLayout;
+export default AffilliateLayout;
